@@ -14,7 +14,7 @@ const server = app.listen(process.env.PORT || 5000,()=>{
   const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
-      origin: "https://sendthoughts.netlify.app/",
+      origin: "https://sendthoughts.netlify.app",
       // origin: "http://192.168.139.133:3000/",
       // credentials: true,
     },
